@@ -33,6 +33,12 @@ class Car{
         return $this -> model ;
       
     }
+
+    function __destruct()
+    {
+      echo "\n";
+      echo "the car is:  {$this->model}." ;
+    }
   }
   
   $p=new Car('sipa','blue','131 SE');
