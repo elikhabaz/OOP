@@ -5,11 +5,12 @@ class Member{
     private $name;
 
     public function set_name($name){
-         $this->name = trim($name);
+         $name = trim($name);
 
          if($name==''){
             return false;
          }
+         $this->name = $name;
     }
 
     public function get_name(){
@@ -18,7 +19,7 @@ class Member{
 }
 
 $w=new Member();
-$w->set_name(' eli');
+$w->set_name(' ');
 echo $w->get_name();
 
 ?>
