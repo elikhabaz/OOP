@@ -25,12 +25,12 @@ class Car{
   
     public function set_color(){
       echo "\n";
-      echo $this -> color;
+      return $this -> color;
       
     }
     public function name_model(){
         echo "\n";
-        echo $this -> model ;
+        return $this -> model ;
       
     }
   }
